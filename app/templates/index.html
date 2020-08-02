@@ -12,14 +12,14 @@
     </tr>
     </thead>
     <tbody>
-    {% for city in cities %}
+    {% for mlbplayer in mlbplayers %}
     <tr>
-        <td><a href="view/{{mlb.id}}">{{ mlb.Name }}</a></td>
-        <td>{{ mlb.Team }}</td>
-        <td>{{ mlb.Position }}</td>
-        <td>{{ mlb.Height_Inches }}</td>
-        <td>{{ mlb.Weight_lbs }}</td>
-        <td>{{ mlb.Age }}</td>
+        <td><a href="view/{{mlbplayer.id}}">{{ mlbplayer.Name }}</a></td>
+        <td>{{ mlbplayer.Team }}</td>
+        <td>{{ mlbplayer.Position }}</td>
+        <td>{{ mlbplayer.Height_Inches }}</td>
+        <td>{{ mlbplayer.Weight_lbs }}</td>
+        <td>{{ mlbplayer.Age }}</td>
     </tr>
     {% endfor %}
     </tbody>

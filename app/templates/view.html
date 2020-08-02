@@ -2,19 +2,20 @@
 {% block content %}
 
 <div class="card" class="m-5 p-2">
-    <h5 class="card-title">{{ mlb.Name }} - {{ mlb.Team }}</h5>
+    <h5 class="card-title">{{ mlbplayer.Name }}</h5>
 
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">{{ mlb.Position }}</li>
-        <li class="list-group-item">{{ mlb.Height_inches }}</li>
-        <li class="list-group-item">{{ mlb.Weight_lbs }}</li>
-        <li class="list-group-item">{{ mlb.Age }}</li>
+        <li class="list-group-item">{{ mlbplayer.Team }}</li>
+        <li class="list-group-item">{{ mlbplayer.Position }}</li>
+        <li class="list-group-item">{{ mlbplayer.Height_inches }}</li>
+        <li class="list-group-item">{{ mlbplayer.Weight_lbs }}</li>
+        <li class="list-group-item">{{ mlbplayer.Age }}</li>
     </ul>
     <div class="card-body">
-        <a href="/edit/{{mlb.id}}" class="card-link btn btn-primary">edit</a>
+        <a href="/edit/{{mlbplayer.id}}" class="card-link btn btn-primary">Edit</a>
+        <form action="/delete/{{mlbplayer.id}}" method="post"><button type="submit" class="btn btn-danger">Delete</button></form>
     </div>
 </div>
-<form action="/delete/{{mlb.id}}" method="post"><button type="submit" class="btn btn-danger">Delete</button></form>
 
 
 {% endblock %}

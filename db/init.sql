@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS mlbplayersData (
     `Age` INT,
     PRIMARY KEY (`id`)
 );
-INSERT INTO mlbplayersData (Name, Team, Position, Height_inches, Weight_lbs, Age) VALUES
+INSERT INTO mlbplayerData (Name, Team, Position, Height_inches, Weight_lbs, Age) VALUES
     ('Adam Donachie',' "BAL"',' "Catcher"',74,180,22),
     ('Paul Bako',' "BAL"',' "Catcher"',74,215,34),
     ('Ramon Hernandez',' "BAL"',' "Catcher"',72,210,30),
